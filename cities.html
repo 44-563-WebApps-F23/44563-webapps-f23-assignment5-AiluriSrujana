@@ -1,45 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Visit cities with Srujana</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" 
-    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <style>
+    .img-fluid {
+      max-width: 90px;
+      height: 90px;
+
+    }
+
+    .img-thumbnail {
+      max-width: 90px;
+      height: 90px;
+
+    }
+
+    table {
+      margin: 20px;
+    }
+  </style>
 </head>
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="cities.html">A FEW CITIES</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="basic.html">Basic</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="advanced.html">Advanced</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
 <body>
   <h1>Visit cities with Srujana</h1>
-  <div class="container">                      
-    <div class="row"> 
-      <div class="col-sm-2">A</div>
-      <div class="col-sm-2">I</div>
-      <div class="col-sm-2">L</div>
-      <div class="col-sm-2">U</div>
-      <div class="col-sm-2">R</div>
-      <div class="col-sm-2">I</div>
+  <div class="container">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2">A</div>
+        <div class="col-sm-2">I</div>
+        <div class="col-sm-2">L</div>
+        <div class="col-sm-2">U</div>
+        <div class="col-sm-2">R</div>
+        <div class="col-sm-2">I</div>
+      </div>
+      <div class="row">
+        <div class="col-md">Albama</div>
+        <div class="col-md">Illinois</div>
+        <div class="col-md">Lahore</div>
+        <div class="col-md">Ukaih</div>
+        <div class="col-md">Rome</div>
+        <div class="col-md">Idaho</div>
+      </div>
     </div>
-    <div class="row"> 
-      <div class="col-md">Albama</div>
-      <div class="col-md">Illinois</div>
-      <div class="col-md">Lahore</div>
-      <div class="col-md">Ukaih</div>
-      <div class="col-md">Rome</div>
-      <div class="col-md">Idaho</div>
+    <br>
+    <h5> Ans For Row-Breaking </h5>
+    <p>WHILE REDUCING THE PAGE IN BROWSER THE SECOND ROW WITH CITY NAMES ARE GETTING REDUCED FIRST</p>
+    <br>
+    <h5>Reason For Row-Breaking</h5>
+    <br>
+    <p>Since col-md for medium devices Occupies Screen width equal to or greater than 992 px</p>
+    <p>For Adjusting the Columns size it cannot extend the scrren width So,the cities are getting broke</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 px-0">
+          <img src="idaho.jpg" class="img-fluid">
+        </div>
+        <div class="col-md-4 px-0">
+          <img src="lahore.jpg" class="img-fluid">
+        </div>
+        <div class="col-md-4 px-0">
+          <img src="Rome.jpg" class="img-fluid">
+        </div>
+      </div>
+      <br>
     </div>
-  </div> 
-         <br>
-         <h5> Ans For Row-Breaking </h5>
-         <p>WHILE REDUCING THE PAGE IN BROWSER THE SECOND ROW WITH CITY NAMES ARE GETTING REDUCED FIRST</p>
-         <br>
-         <h5>Reason For Row-Breaking</h5>
-         <br>
-         <p>Since col-md for medium devices Occupies Screen width equal to or greater than 992 px</p>
-         <p>For Adjusting the Columns size it cannot extend the scrren width So,the cities are getting broke</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 px-0">
+          <img src="idaho.jpg" class="img-thumbnail">
+        </div>
+        <div class="col-md-4 px-0">
+          <img src="lahore.jpg" class="img-thumbnail">
+        </div>
+        <div class="col-md-4 px-0">
+          <img src="Rome.jpg" class="img-thumbnail">
+        </div>
+      </div>
+    </div>
 
+    <!---- TABLE  ---->
+    <table class="table table-striped table-dark table-bordered table-hover caption-top">
+      <caption> LETTER , CITY , RIVER AND TREE </caption>
+      <thead class="thead-dark">
+      <tbody class="table-group-divider">
+        <tr class="table-active">
+          <th scope="col">SNO</th>
+          <th scope="col">LETTER</th>
+          <th scope="col">CITY</th>
+          <th scope="col">RIVER</th>
+          <th scope="col">TREE</th>
+        </tr>
+        </thead>
+        <!---<tbody>--->
+        <tr class="table-primary">
+          <th scope="row">1</th>
+          <td>A</td>
+          <td>America</td>
+          <td>Arizona</td>
+          <td>Apple</td>
+        </tr>
+        <tr class="table-success">
+          <th scope="row">2</th>
+          <td>B</td>
+          <td>Bangladesh</td>
+          <td>Baali</td>
+          <td>Banana</td>
+        </tr>
+        <tr class="table-warning">
+          <th scope="row">3</th>
+          <td>C</td>
+          <td>Canada</td>
+          <td>Coorg</td>
+          <td>Custard-Apple</td>
+        </tr>
+        <tr class="table-info">
+          <th scope="row">4</th>
+          <td>S</td>
+          <td>SouthAmerica</td>
+          <td>Seattle</td>
+          <td>Sapota</td>
+        </tr>
+        <tr class="table-light">
+          <th scope="row">5</th>
+          <td>G</td>
+          <td>Gurgoan</td>
+          <td>Ganga</td>
+          <td>Guva</td>
+        </tr>
+        <tr class="table-warning">
+          <th scope="row">6</th>
+          <td>M</td>
+          <td>Missouri</td>
+          <td>Mozingo</td>
+          <td>Mango</td>
+        </tr>
+      </tbody>
+    </table>
+    <!---</tbody>---->
+
+    <br>
+    <!---- BUTTONS-->
+    <label> INDIVIDUAL BUTTONS:</label>
+    <div>
+
+      <button type="button" class="btn btn-success">A</button>
+      <button type="button" class="btn btn-primary">I</button>
+      <button type="button" class="btn btn-info">L</button>
+      <button type="button" class="btn btn-danger">U</button>
+      <button type="button" class="btn btn-warning">R</button>
+      <button type="button" class="btn btn-danger">I</button>
+    </div>
+    <br>
+    <label>BUTTON GROUPS</label>
+    <div>
+      <div class="btn-toolbar">
+
+        <div class="btn-group" aria-label="First button Group">
+          <button type="button" class="btn btn-success">R</button>
+          <button type="button" class="btn btn-success">L</button>
+          <button type="button" class="btn btn-success">I</button>
+        </div>
+
+        <div class="btn-group" aria-label="Second button Group">
+          <button type="button" class="btn btn-warning">J</button>
+          <button type="button" class="btn btn-warning">A</button>
+        </div>
+        <div class="btn-group" aria-label="Third button Group">
+          <button type="button" class="btn btn-danger">N</button>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="dropdown">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        DropDown
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="basic.html">BASIC</a>
+        <a class="dropdown-item" href="advanced.html">ADVANCED</a>
+      </div>
+    </div>
+    <br>
+    <form>
+      
+      <div class="mb-3">
+        
+        <div class="form-group">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="form-group">
+          <label for="City" class="form-label">CITY</label>
+          <input type="text" class="form-control" id="city" type="text" placeholder="Enter Your City">
+        </div>
+        <div class="form-check">
+          <label for="NewsLetter" class="form-check-label">Sign Up For NewsLetter?</label>
+          <input type="checkbox" class="form-check-input">
+        </div>
+        <button type="submit" class="btn btn-primary">SUBMIT</button>
+
+      </div>
+    </div>
+    </form>
+    
+    <div class="card" style="width: 18rem" margin="1rem">
+      <img src="idaho.jpg">
+      <div class="card-body">
+        <h5 class="card-title">Idaho</h5>
+        <p class="card-text">Idaho is a state in the Pacific North-west region of United States.
+        </p>
+        <button class="btn btn-info" type="button">
+          <a href="https://en.wikipedia.org/wiki/History_of_Idaho">City-1</a>
+        </button>
+      </div>
+      <div class="card" style="width: 18rem" margin="1rem">
+        <img src="lahore.jpg">
+        <div class="card-body">
+          <h5 class="card-title">Lahore</h5>
+          <p class="card-text">Lahore is the second largest city in Pakistan after Karachi.
+          </p>
+          <button class="btn btn-info" type="button">
+            <a href="https://en.wikipedia.org/wiki/History_of_Lahore">City-2</a>
+          </button>
+        </div>
+        <div class="card" style="width: 18rem" margin="1rem">
+          <img src="Rome.jpg">
+          <div class="card-body">  
+            <h5 class="card-title">Rome</h5>
+            <p class="card-text">Rome is the capital city of Italy.The Eternal City Rome is worth a visit.
+            </p>
+            <button class="btn btn-info" type="button">
+              <a href="https://en.wikipedia.org/wiki/History_of_Rome">City-3</a>
+            </button>
+          </div>
+          </div>
 </body>
+
 </html>
